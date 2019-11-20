@@ -503,13 +503,55 @@
           </div>
           <div
             class="demo__item next">
-            <div class="clip-path clip-path--circle"></div>
-            <pre><code class="language-css">clip-path: circle(55% at 35% 35%)</code></pre>
+            <div class="clip-path clip-path--inset-round"></div>
+            <pre><code class="language-css">clip-path: inset(10px 20px round 20%)</code></pre>
           </div>
           <div
             class="demo__item next">
+            <div class="clip-path clip-path--inset-leaf"></div>
+            <pre><code class="language-css">clip-path: inset(10px 20px round 20% 0 20% 0)</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="demo demo--clip-path demo--list">
+          <div
+            class="demo__item">
+            <div class="clip-path clip-path--circle-at-center"></div>
+            <pre><code class="language-css">clip-path: circle(50% at 50% 50%)</code></pre>
+          </div>
+          <div
+            class="demo__item next">
+            <div class="clip-path clip-path--circle-at-left"></div>
+            <pre><code class="language-css">clip-path: circle(50% at 0% 50%)</code></pre>
+          </div>
+          <div
+            class="demo__item next">
+            <div class="clip-path clip-path--circle-at-top-left"></div>
+            <pre><code class="language-css">clip-path: circle(65% at 75% 25%)</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="demo demo--clip-path demo--list">
+          <div
+            class="demo__item">
+            <div class="clip-path clip-path--rhomb"></div>
+            <pre><code class="language-css">clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)</code></pre>
+          </div>
+
+          <div
+            class="demo__item">
             <div class="clip-path clip-path--polygon"></div>
-            <pre><code class="language-css">clip-path: polygon(67.84% 0.4%, 99.61% 33.55%, 95.83% 76.29%, 37.26% 102.39%, -0.8% 75.87%, 22.99% 20.35%)</code></pre>
+            <pre><code class="language-css">clip-path: polygon(68% 0%, 100% 34%, 96% 76%, 37% 100%, 0% 76%, 23% 20%)</code></pre>
+          </div>
+
+          <div
+            class="demo__item">
+            <div class="clip-path clip-path--polygon-animated"></div>
+            <pre><code class="language-css">clip-path: polygon(52% 2%, 68% 34%, 83% 64%, 100% 100%, 55% 100%, 0% 100%, 16% 70%, 35% 35%)</code></pre>
           </div>
         </div>
       </section>
@@ -708,6 +750,27 @@
             class="demo__item">
             <div class="clip-path clip-path--leaf"></div>
             <pre><code class="language-css">clip-path: url("#path-leaf")</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide slide--section-title">
+        <h3>Практические примеры</h3>
+      </section>
+
+      <section class="slide slide--no-label">
+        <div class="demo demo--clip-path-text demo--cells">
+          <div
+            class="demo__item">
+            <div class="clip-path clip-path--poly-text">
+              Палинологическое изучение осадков онежской трансгрессии показало, что парадигма изоморфна времени.
+            </div>
+          </div>
+          <div
+            class="demo__item">
+            <div class="clip-path clip-path--poly-text">
+              Согласно учению об изотопах, лирика вырождена. Кукуруза выводит знак. Момент фактически выстраивает экскурсионный подземный сток. Ташет, иcходя из того, что заставляет иначе взглянуть на то, что такое вектор угловой скорости.
+            </div>
           </div>
         </div>
       </section>
@@ -932,12 +995,12 @@ mask-size: 50% 50%;</code></pre>
           </div>
 
           <div
-            class="demo__item demo__item--arrow">
-            &rarr;
+            class="demo__item demo__item--or next">
+            или
           </div>
 
           <div
-            class="demo__item">
+            class="demo__item next">
             <code>mask-image: url(#mask)</code>
 
             <div class="mask-wrapper mask-wrapper--svg">

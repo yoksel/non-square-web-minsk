@@ -412,6 +412,11 @@ H4 + .demo {
   flex-basis: auto !important;
   font-size: 3em; }
 
+.demo__item--or {
+  flex-grow: 0;
+  flex-basis: auto !important;
+  font-size: 2em; }
+
 .demo__item .browser {
   position: absolute;
   top: 0;
@@ -30488,9 +30493,25 @@ pre[class*="language-"] {
   -webkit-clip-path: inset(10px 20px);
           clip-path: inset(10px 20px); }
 
-.clip-path--circle::before {
-  -webkit-clip-path: circle(55% at 35% 35%);
-          clip-path: circle(55% at 35% 35%); }
+.clip-path--inset-round::before {
+  -webkit-clip-path: inset(10px 20px round 20%);
+          clip-path: inset(10px 20px round 20%); }
+
+.clip-path--inset-leaf::before {
+  -webkit-clip-path: inset(10px 20px round 20% 0 20% 0);
+          clip-path: inset(10px 20px round 20% 0 20% 0); }
+
+.clip-path--circle-at-center::before {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%); }
+
+.clip-path--circle-at-left::before {
+  -webkit-clip-path: circle(50% at 0% 50%);
+          clip-path: circle(50% at 0% 50%); }
+
+.clip-path--circle-at-top-left::before {
+  -webkit-clip-path: circle(65% at 75% 25%);
+          clip-path: circle(65% at 75% 25%); }
 
 .clip-path--ellipse::before {
   -webkit-clip-path: ellipse(30% 50% at 70% 50%);
@@ -30501,8 +30522,30 @@ pre[class*="language-"] {
           clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
 
 .clip-path--polygon::before {
-  -webkit-clip-path: polygon(67.84% 0.4%, 99.61% 33.55%, 95.83% 76.29%, 37.26% 100%, 0% 75.87%, 22.99% 20.35%);
-          clip-path: polygon(67.84% 0.4%, 99.61% 33.55%, 95.83% 76.29%, 37.26% 100%, 0% 75.87%, 22.99% 20.35%); }
+  -webkit-clip-path: polygon(68% 0%, 100% 34%, 96% 76%, 37% 100%, 0% 76%, 23% 20%);
+          clip-path: polygon(68% 0%, 100% 34%, 96% 76%, 37% 100%, 0% 76%, 23% 20%); }
+
+.clip-path--polygon-animated::before {
+  -webkit-clip-path: polygon(52% 2%, 68% 34%, 83% 64%, 100% 100%, 55% 100%, 0% 100%, 16% 70%, 35% 35%);
+          clip-path: polygon(52% 2%, 68% 34%, 83% 64%, 100% 100%, 55% 100%, 0% 100%, 16% 70%, 35% 35%);
+  -webkit-animation: clip-path-poly 7s infinite;
+          animation: clip-path-poly 7s infinite; }
+
+@-webkit-keyframes clip-path-poly {
+  33% {
+    -webkit-clip-path: polygon(50% 28%, 100% 2.5%, 75% 45%, 100% 100%, 50% 67%, 0% 100%, 26% 50%, 0% 0%);
+            clip-path: polygon(50% 28%, 100% 2.5%, 75% 45%, 100% 100%, 50% 67%, 0% 100%, 26% 50%, 0% 0%); }
+  66% {
+    -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 45%, 100% 100%, 50% 100%, 0% 100%, 0% 50%, 0% 0%);
+            clip-path: polygon(50% 0%, 100% 0%, 100% 45%, 100% 100%, 50% 100%, 0% 100%, 0% 50%, 0% 0%); } }
+
+@keyframes clip-path-poly {
+  33% {
+    -webkit-clip-path: polygon(50% 28%, 100% 2.5%, 75% 45%, 100% 100%, 50% 67%, 0% 100%, 26% 50%, 0% 0%);
+            clip-path: polygon(50% 28%, 100% 2.5%, 75% 45%, 100% 100%, 50% 67%, 0% 100%, 26% 50%, 0% 0%); }
+  66% {
+    -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 45%, 100% 100%, 50% 100%, 0% 100%, 0% 50%, 0% 0%);
+            clip-path: polygon(50% 0%, 100% 0%, 100% 45%, 100% 100%, 50% 100%, 0% 100%, 0% 50%, 0% 0%); } }
 
 .clip-path--star::before {
   -webkit-clip-path: url("#path-star");
@@ -30525,6 +30568,29 @@ pre[class*="language-"] {
 .clip-path--leaf::before {
   -webkit-clip-path: url("#path-leaf");
           clip-path: url("#path-leaf"); }
+
+.demo--clip-path-text .demo__item {
+  flex-basis: calc(50% - 4rem); }
+  .demo--clip-path-text .demo__item:first-child {
+    margin-right: 4rem; }
+
+.clip-path--poly-text {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  padding: 2.5rem 4rem;
+  box-sizing: border-box;
+  background: linear-gradient(to right bottom, hotpink 5%, steelblue, teal 110%);
+  outline: none;
+  -webkit-clip-path: polygon(6% 0%, 94% 0%, 100% 30%, 94% 100%, 6% 100%, 0% 65%);
+          clip-path: polygon(6% 0%, 94% 0%, 100% 30%, 94% 100%, 6% 100%, 0% 65%);
+  color: #FFF;
+  line-height: 1.5;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
+  .clip-path--poly-text::before {
+    content: none; }
 
 .relative-path .column {
   display: flex;
