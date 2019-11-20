@@ -34,7 +34,7 @@ $ob-stripe-color-2: mediumturquoise;
       background: linear-gradient(
         to right bottom,
         $ob-stripe-color-1 50%,
-        $ob-stripe-color-2 0);
+        $ob-stripe-color-2 50.45%);
     }
   }
 
@@ -46,7 +46,7 @@ $ob-stripe-color-2: mediumturquoise;
       background: linear-gradient(
         to right bottom,
         $ob-stripe-color-bg 50%,
-        $ob-stripe-color-1 0);
+        $ob-stripe-color-1 50.45%);
     }
   }
 
@@ -57,7 +57,7 @@ $ob-stripe-color-2: mediumturquoise;
       background: linear-gradient(
         to right bottom,
         $ob-stripe-color-2 50%,
-        $ob-stripe-color-bg 0);
+        $ob-stripe-color-bg 50.45%);
     }
   }
 }

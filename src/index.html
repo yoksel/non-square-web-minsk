@@ -349,6 +349,16 @@
     <!--=include ../src/demos/css-patterns-blend-mode.html -->
   </section>
 
+  <section class="slide">
+    <h3>Но зачем?</h3>
+
+    <ul>
+      <li>Быстро набросать иконку/фон/декоративный элемент &rarr; CSS</li>
+      <li>Эксперименты и развитие &rarr; CSS</li>
+      <li>Иконки/графика для сайта &rarr; SVG</li>
+    </ul>
+  </section>
+
   <section class="slide slide--section-title">
     <h3>Практические примеры</h3>
   </section>
@@ -494,7 +504,7 @@
           <div
             class="demo__item next">
             <div class="clip-path clip-path--circle"></div>
-            <pre><code class="language-css">clip-path: circle(50% at 50% 50%)</code></pre>
+            <pre><code class="language-css">clip-path: circle(55% at 35% 35%)</code></pre>
           </div>
           <div
             class="demo__item next">
@@ -553,6 +563,21 @@
     &lt;path d="M 150,300 C 150,300,0,210,0,100 ..." />
   &lt;/clipPath>
 &lt;/svg></code></pre>
+      </section>
+
+      <section class="slide slide--no-label">
+        <div class="cats">
+          <div class="cats__box">
+            <h4>userSpaceOnUse</h4>
+            <img src="./assets/img/cats/usu.jpg" alt="Cat shows userSpaceOnUse">
+          </div>
+
+          <div class="cats__box">
+            <h4>objectBoundingBox</h4>
+            <img src="./assets/img/cats/obb.jpg" alt="Cat shows objectBoundingBox">
+          </div>
+        </div>
+
       </section>
 
       <section class="slide slide--no-label">
@@ -1352,25 +1377,25 @@ mask-size: 50% 50%;</code></pre>
     </section>
 
     <section class="slide">
+      <figure class="figure figure--caption-aside">
+        <figcaption
+        class="copyright right">
+          <a
+            href="https://codepen.io/yoksel/pen/pooPgXg">-ms-wrap-flow test (IE/Edge)</a>
+        </figcaption>
+
+        <img
+          class="cover"
+          src="./assets/img/css-exclusions.png">
+      </figure>
+    </section>
+
+    <section class="slide">
         <pre><code class="language-css">.image {
   position: absolute;
   /* тут какое-то позиционирование */
   -ms-wrap-flow: both;
 }</code></pre>
-    </section>
-
-    <section class="slide">
-      <figure class="figure figure--caption-aside">
-          <figcaption
-          class="copyright right">
-            <a
-              href="https://codepen.io/yoksel/pen/pooPgXg">-ms-wrap-flow test (IE/Edge)</a>
-          </figcaption>
-
-          <img
-            class="cover"
-            src="./assets/img/css-exclusions.png">
-        </figure>
     </section>
 
     <section class="slide">

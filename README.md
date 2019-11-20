@@ -1,6 +1,6 @@
 # Неквадратный веб
 
-Слайды: [yoksel.github.io/non-square-web](http://yoksel.github.io/non-square-web)
+Слайды: [yoksel.github.io/non-square-web-minsk](http://yoksel.github.io/non-square-web-minsk)
 
 Движок: [Shower](https://github.com/shower/shower)
 
@@ -18,4 +18,4 @@
 
 ## Чего-то не хватает
 
-Если у вас есть полезные ссылки или дополнения к докладу, можете написать мне в [твиттер](https://twitter.com/yoksel) или в [issues](https://github.com/yoksel/non-square-web/issues)
+Если у вас есть полезные ссылки или дополнения к докладу, можете написать мне в [твиттер](https://twitter.com/yoksel) или в [issues](https://github.com/yoksel/non-square-web-minsk/issues)

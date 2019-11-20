@@ -13,7 +13,7 @@
   flex-shrink: 0;
   width: 150px;
   height: 150px;
-  // outline: 1px dashed #CCC;
+  outline: 1px dashed #CCC;
 
   .text-centered & {
     margin: auto;
@@ -41,7 +41,7 @@
   clip-path: inset(10px 20px);
 }
 .clip-path--circle::before {
-  clip-path: circle(50% at 50% 50%);
+  clip-path: circle(55% at 35% 35%);
 }
 .clip-path--ellipse::before {
   clip-path: ellipse(30% 50% at 70% 50%);
