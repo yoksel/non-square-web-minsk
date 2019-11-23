@@ -19,13 +19,12 @@
   width: 45%;
   height: var(--card-height);
   max-height: 100%;
-  background-image: url(https://yoksel.github.io/Sandbox/img/demo/running-woman-left-filip-mroz.jpg);
+  background-image: url(../../assets/img/demo/running-woman-left-filip-mroz.jpg);
   background-size: cover;
   clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
   shape-outside: polygon(0% 0%, 84.60% -0.60%, 65% 100%, 0% 100%);
   margin-right: 4em;
 }
-
 
 .card-beveled-edges__text {
   margin: 2em 0;
@@ -35,7 +34,6 @@
     margin: 1.5em 0;
   }
 }
-
 
 .card-beveled-edges__right-corner {
   float: right;
