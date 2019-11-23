@@ -30592,6 +30592,83 @@ pre[class*="language-"] {
   .clip-path--poly-text::before {
     content: none; }
 
+.slide--card-beveled-edges {
+  background: #000;
+  display: flex;
+  align-items: center; }
+
+.card-beveled-edges {
+  --card-height: 480px;
+  width: 800px;
+  flex-shrink: 0;
+  margin: auto;
+  background: #FFF;
+  -webkit-clip-path: polygon(100% 0%, 90% 100%, 0% 100%, 10% 0%);
+          clip-path: polygon(100% 0%, 90% 100%, 0% 100%, 10% 0%); }
+
+.card-beveled-edges__visual {
+  float: left;
+  width: 45%;
+  height: var(--card-height);
+  max-height: 100%;
+  background-image: url(https://yoksel.github.io/Sandbox/img/demo/running-woman-left-filip-mroz.jpg);
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+  shape-outside: polygon(0% 0%, 84.6% -0.6%, 65% 100%, 0% 100%);
+  margin-right: 4em; }
+
+.card-beveled-edges__text {
+  margin: 2em 0;
+  font-size: 20px; }
+  .card-beveled-edges__text P {
+    margin: 1.5em 0; }
+
+.card-beveled-edges__right-corner {
+  float: right;
+  width: 10%;
+  min-height: var(--card-height);
+  height: 100%;
+  max-height: 100%;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+  shape-outside: polygon(100% 0%, 100% 100%, 0% 100%);
+  margin-left: 2em; }
+
+.slide--rhomb-gallery {
+  background-color: #000;
+  display: flex;
+  align-items: center; }
+
+.rhomb-gallery {
+  position: relative;
+  flex-grow: 1;
+  margin: auto;
+  max-width: 1200px;
+  max-height: 1200px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2vmin;
+  justify-items: center;
+  align-items: center; }
+  .rhomb-gallery IMG {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -52%;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition: all .25s; }
+    .rhomb-gallery IMG:nth-child(7n + 1) {
+      grid-column: 2 / span 2; }
+    .rhomb-gallery IMG:hover {
+      z-index: 2;
+      -webkit-transform: scale(2);
+              transform: scale(2); }
+
 .relative-path .column {
   display: flex;
   flex-direction: column;
