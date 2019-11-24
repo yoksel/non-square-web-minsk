@@ -88,6 +88,14 @@
     margin-top: 2rem !important;
     max-width: 400px; }
 
+.magazine-example {
+  float: right;
+  max-width: 40%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  margin-right: -80px !important;
+  margin-top: -43% !important; }
+
 .slide {
   padding: 40px 50px;
   /* Tables */ }
@@ -865,6 +873,15 @@ pre[class*="language-"] {
     .figure--caption-aside .figure__img-wrapper + .figure__caption,
     .figure--caption-aside .figure__content + .figure__caption {
       margin-left: 1rem; }
+  .figure__content--cells {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    text-align: center; }
+    .figure__content--cells IMG {
+      max-height: 100%;
+      display: inline-block;
+      line-height: 0; }
 
 .columns {
   display: flex;
@@ -31448,7 +31465,11 @@ pre[class*="language-"] {
   height: 100%;
   max-height: 100%;
   overflow: hidden;
-  font-size: 20px; }
+  font-size: 20px;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  text-align: left; }
 
 .text-wrapping__img {
   float: left;
@@ -31480,7 +31501,6 @@ pre[class*="language-"] {
 .text-wrapping--cross {
   width: 80%;
   margin: auto;
-  text-align: justify;
   line-height: 1.9; }
   .text-wrapping--cross .text-wrapping__shape {
     width: 30%;
@@ -31497,20 +31517,24 @@ pre[class*="language-"] {
     shape-outside: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%, 100% 75.08%, 100% 25%, 0% 25%); }
 
 .text-wrapping--circle {
-  line-height: 2.05; }
-  .text-wrapping--circle .text-wrapping__img {
-    -webkit-clip-path: none;
-            clip-path: none;
-    shape-margin: 2em; }
-  .text-wrapping--circle .text-wrapping__img--1 {
-    -webkit-mask-image: radial-gradient(circle at 100% 50%, transparent 60%, gold 60.25%);
-            mask-image: radial-gradient(circle at 100% 50%, transparent 60%, gold 60.25%);
-    shape-outside: radial-gradient(circle at 100% 50%, transparent 60%, gold 60.25%); }
-  .text-wrapping--circle .text-wrapping__img--2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 500px !important;
+  height: 500px !important;
+  margin: auto; }
+  .text-wrapping--circle .text-wrapping__shaper {
+    float: left;
+    width: 50%;
+    height: 100%;
+    shape-outside: radial-gradient(500px at 100% 50%, transparent 50%, gold 0);
+    shape-margin: 0; }
+  .text-wrapping--circle .text-wrapping__shaper:nth-child(2) {
     float: right;
-    -webkit-mask-image: radial-gradient(circle at 0% 50%, transparent 60%, gold 60.25%);
-            mask-image: radial-gradient(circle at 0% 50%, transparent 60%, gold 60.25%);
-    shape-outside: radial-gradient(circle at 0% 50%, transparent 60%, gold 60.25%); }
+    shape-outside: radial-gradient(500px at 0% 50%, transparent 50%, gold 0); }
 
 .slide--cakes-css-shapes {
   background: #000;
@@ -31521,7 +31545,10 @@ pre[class*="language-"] {
   width: 90%;
   margin: auto;
   padding: 2em;
-  font-size: 16px; }
+  font-size: 20px;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
 
 .cakes-css-shapes__container {
   padding: 2em;

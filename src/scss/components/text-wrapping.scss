@@ -3,8 +3,9 @@
   height: 100%;
   max-height: 100%;
   overflow: hidden;
-  // outline: 2px solid red;
   font-size: 20px;
+  hyphens: auto;
+  text-align: left;
 }
 
 .text-wrapping__img {
@@ -45,7 +46,7 @@
 .text-wrapping--cross {
   width: 80%;
   margin: auto;
-  text-align: justify;
+  // text-align: justify;
   line-height: 1.9;
 
   .text-wrapping__shape {
@@ -65,19 +66,25 @@
 }
 
 .text-wrapping--circle {
-  line-height: 2.05;
-  .text-wrapping__img {
-    clip-path: none;
-    shape-margin: 2em;
-  }
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 500px !important;
+  height: 500px !important;
+  margin: auto;
 
-  .text-wrapping__img--1 {
-    mask-image: radial-gradient(circle at 100% 50%, transparent 60%, gold 60.25%);
-    shape-outside: radial-gradient(circle at 100% 50%, transparent 60%, gold 60.25%);
+  .text-wrapping__shaper {
+    float: left;
+    width: 50%;
+    height: 100%;
+    shape-outside: radial-gradient(500px at 100% 50%, transparent 50%, gold 0);
+    shape-margin: 0;
   }
-  .text-wrapping__img--2 {
+  .text-wrapping__shaper:nth-child(2) {
     float: right;
-    mask-image: radial-gradient(circle at 0% 50%, transparent 60%, gold 60.25%);
-    shape-outside: radial-gradient(circle at 0% 50%, transparent 60%, gold 60.25%);
+    shape-outside: radial-gradient(500px at 0% 50%, transparent 50%, gold 0);
   }
 }
