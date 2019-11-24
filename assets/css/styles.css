@@ -30632,12 +30632,16 @@ pre[class*="language-"] {
   background-size: cover;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-  shape-outside: polygon(0% 0%, 84.6% -0.6%, 65% 100%, 0% 100%);
-  margin-right: 4em; }
+  shape-outside: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%) border-box;
+  shape-margin: 1em;
+  margin-right: 1em; }
 
 .card-beveled-edges__text {
   margin: 2em 0;
-  font-size: 20px; }
+  font-size: 20px;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
   .card-beveled-edges__text P {
     margin: 1.5em 0; }
 
@@ -30649,8 +30653,8 @@ pre[class*="language-"] {
   max-height: 100%;
   -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
-  shape-outside: polygon(100% 0%, 100% 100%, 0% 100%);
-  margin-left: 2em; }
+  shape-outside: polygon(100% 0%, 100% 100%, 0% 100%) border-box;
+  shape-margin: 1em; }
 
 .slide--rhomb-gallery {
   background-color: #000;
@@ -31574,7 +31578,7 @@ pre[class*="language-"] {
   margin-right: -4em !important;
   -webkit-clip-path: polygon(36% 16%, 45% 0%, 100% 0%, 99% 100%, 72% 100%, 65% 92%, 56% 75%, 57% 62%, 43% 56%, 33% 42%, 37% 26%);
           clip-path: polygon(36% 16%, 45% 0%, 100% 0%, 99% 100%, 72% 100%, 65% 92%, 56% 75%, 57% 62%, 43% 56%, 33% 42%, 37% 26%);
-  shape-outside: polygon(41% 0%, 57% -13%, 117% -13%, 117% 102%, 90% 102%, 76% 91%, 65% 71%, 66% 57%, 52% 51%, 38% 32%, 43% 13%); }
+  shape-outside: polygon(36% 16%, 45% 0%, 100% 0%, 99% 100%, 72% 100%, 65% 92%, 56% 75%, 57% 62%, 43% 56%, 33% 42%, 37% 26%) border-box; }
 
 .cakes-css-shapes__img--drinks {
   float: left;
@@ -31583,4 +31587,4 @@ pre[class*="language-"] {
   margin-left: -4em !important;
   -webkit-clip-path: polygon(0% 0%, 30% 0%, 54% 5.14%, 76% 18%, 81% 60%, 64.79% 83%, 35% 99.29%, 0% 100%);
           clip-path: polygon(0% 0%, 30% 0%, 54% 5.14%, 76% 18%, 81% 60%, 64.79% 83%, 35% 99.29%, 0% 100%);
-  shape-outside: polygon(-38% 2%, 39.38% 7.06%, 70.04% 21.06%, 77.45% 62.91%, 53.53% 86.8%, 22.88% 99.57%, -38.96% 99.69%); }
+  shape-outside: polygon(0% 0%, 30% 0%, 54% 5.14%, 76% 18%, 81% 60%, 64.79% 83%, 35% 99.29%, 0% 100%) border-box; }
