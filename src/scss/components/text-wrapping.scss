@@ -88,3 +88,17 @@
     shape-outside: radial-gradient(500px at 0% 50%, transparent 50%, gold 0);
   }
 }
+
+.demo--image-threshold {
+  margin-top: 2rem;
+  font-size: 22px;
+  text-align: left;
+  hyphens: auto;
+
+  IMG {
+    float: left;
+    shape-outside: url(../../assets/img/demo/circle-with-shadow.png);
+    shape-image-threshold: .5;
+    shape-margin: 2rem;
+  }
+}
