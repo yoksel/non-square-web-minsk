@@ -790,6 +790,7 @@ pre[class*="language-"].line-numbers > code {
   text-align: right; }
 
 .slide pre {
+  margin-top: 0;
   font-size: 20px; }
 
 .slide--code-from-spec pre {
@@ -31540,14 +31541,31 @@ pre[class*="language-"] {
     float: right;
     shape-outside: radial-gradient(500px at 0% 50%, transparent 50%, gold 0); }
 
-.demo--image-threshold {
+.text-wrapping--margin-box {
   margin-top: 2rem;
-  font-size: 22px;
   text-align: left;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto; }
-  .demo--image-threshold IMG {
+  .text-wrapping--margin-box IMG {
+    float: left;
+    width: 250px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+    -webkit-clip-path: none;
+            clip-path: none;
+    shape-outside: margin-box;
+    margin: 0 2rem 2rem 0; }
+
+.text-wrapping--image-threshold {
+  margin-top: 2rem;
+  text-align: left;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
+  .text-wrapping--image-threshold IMG {
     float: left;
     shape-outside: url(../../assets/img/demo/circle-with-shadow.png);
     shape-image-threshold: .5;

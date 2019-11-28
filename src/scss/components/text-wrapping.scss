@@ -89,9 +89,25 @@
   }
 }
 
-.demo--image-threshold {
+.text-wrapping--margin-box {
   margin-top: 2rem;
-  font-size: 22px;
+  text-align: left;
+  hyphens: auto;
+
+  IMG {
+    float: left;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    clip-path: none;
+    shape-outside: margin-box;
+    margin: 0 2rem 2rem 0;
+  }
+}
+
+.text-wrapping--image-threshold {
+  margin-top: 2rem;
   text-align: left;
   hyphens: auto;
 
