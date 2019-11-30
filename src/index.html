@@ -186,20 +186,20 @@
     <h3>Немного за гранью</h3>
   </section>
 
-  <section class="slide slide--francine slide--no-label">
+  <section class="slide slide--lace slide--no-label">
     <figure class="figure figure--caption-aside">
       <figcaption
       class="copyright right white">
         <a
-          href="https://diana-adrianne.com/purecss-francine/">Pure CSS Francine</a>
+          href="https://diana-adrianne.com/purecss-lace/">Pure CSS Lace</a>
         от
         <a
           href="https://diana-adrianne.com/">Diana Smith</a>
       </figcaption>
 
       <img
-        class="img-screen"
-        src="./assets/img/diana-adrianne-purecss-francine.jpg">
+        class="cover"
+        src="./assets/img/diana-adrianne-purecss-lace.png">
     </figure>
   </section>
 
@@ -215,7 +215,7 @@
       </figcaption>
 
       <img
-        class="img-screen"
+        class="cover"
         src="./assets/img/water-and-lemons.png">
     </figure>
   </section>
@@ -349,14 +349,39 @@
     <!--=include ../src/demos/css-patterns-blend-mode.html -->
   </section>
 
-  <section class="slide">
-    <h3>Но зачем?</h3>
+  <section class="slide slide--section-title">
+    <h3>CSS как инструмент для&nbsp;рисования</h3>
+  </section>
 
-    <ul>
-      <li>Быстро набросать иконку/фон/декоративный элемент &rarr; CSS</li>
-      <li>Эксперименты и развитие &rarr; CSS</li>
-      <li>Иконки/графика для сайта &rarr; SVG</li>
-    </ul>
+  <section class="slide slide--conclusions">
+    <div class="columns columns--2">
+      <div class="column">
+        <h4>Минусы</h4>
+
+        <ul>
+          <li>Придется подумать</li>
+          <li>Хрупкость</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Плюсы</h4>
+
+        <ul>
+          <li>Придется подумать</li>
+          <li>Идеально для простых случаев</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <h4>Выводы</h4>
+
+      <ul>
+        <li>Быстро набросать иконку/фон/декоративный элемент &rarr; CSS</li>
+        <li>Эксперименты и развитие &rarr; CSS</li>
+        <li>Сложные иконки и графика для сайта &rarr; SVG</li>
+      </ul>
+    </div>
   </section>
 
   <section class="slide slide--section-title">
@@ -478,6 +503,26 @@
             class="demo__item next">
             <div class="radius radius--shaped"></div>
             <pre><code class="language-css">border-radius: 80% / 100% 100% 60% 60%</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="columns columns--2">
+          <div class="column">
+            <h4>Минусы</h4>
+
+            <ul>
+              <li>Только округлые элементы</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Плюсы</h4>
+
+            <ul>
+              <li>Простота</li>
+              <li>Поддержка браузерами</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -903,6 +948,28 @@
         </figure>
       </section>
 
+      <section class="slide">
+        <div class="columns columns--2">
+          <div class="column">
+            <h4>Минусы</h4>
+
+            <ul>
+              <li>Нет полупрозрачности</li>
+              <li>Нюансы SVG ClipPath</li>
+              <li>Неполная поддержка браузерами</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Плюсы</h4>
+
+            <ul>
+              <li>Относительная простота</li>
+              <li>Производительность</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="slide slide--section-title">
         <h3>CSS mask</h3>
       </section>
@@ -1118,6 +1185,28 @@ mask-size: 50% 50%;</code></pre>
         </figure>
       </section>
 
+      <section class="slide">
+        <div class="columns columns--2">
+          <div class="column">
+            <h4>Минусы</h4>
+
+            <ul>
+              <li>Mask-mode, mask-type</li>
+              <li>Нюансы SVG Mask</li>
+              <li>Неполная поддержка браузерами</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Плюсы</h4>
+
+            <ul>
+              <li>Mask-mode, mask-type</li>
+              <li>Есть полупрозрачность</li>
+              <li>Гибкость управления</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
     <section class="slide slide--section-title">
       <h3>SVG mask</h3>
@@ -1261,6 +1350,27 @@ mask-size: 50% 50%;</code></pre>
             class="cover"
             src="./assets/img/caniuse-svg-mask.png">
         </figure>
+      </section>
+
+      <section class="slide">
+        <div class="columns columns--2">
+          <div class="column">
+            <h4>Минусы</h4>
+
+            <ul>
+              <li>Нюансы SVG Mask</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Плюсы</h4>
+
+            <ul>
+              <li>Поддержка браузерами</li>
+              <li>Есть полупрозрачность</li>
+              <li>Гибкость управления</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
     <section class="slide slide--dark slide--section-title">
@@ -1447,7 +1557,7 @@ shape-outside: margin-box;</code></pre>
         </ul>
       </section>
 
-      <section class="slide slide--no-label">
+      <section class="slide slide--ads  slide--no-label">
         <figure class="figure figure--caption-aside">
           <figcaption
           class="copyright right">
@@ -1458,10 +1568,10 @@ shape-outside: margin-box;</code></pre>
 
           <div class="figure__content figure__content--cells">
             <img
-              class="img-screen"
+              class="img-screen img-screen--tall"
               src="./assets/img/bw-ads-2.jpg">
             <img
-              class="img-screen"
+              class="img-screen img-screen--tall"
               src="./assets/img/1970-ads.jpg">
           </div>
         </figure>

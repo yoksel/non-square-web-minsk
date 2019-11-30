@@ -53,6 +53,10 @@
   padding-top: 30px;
 }
 
+.slide--ads {
+  padding: 25px;
+}
+
 .slide--dark {
   background: #000;
 }
@@ -69,6 +73,14 @@
 
 .slide--francine {
   background-image: linear-gradient(to bottom, #2c3521, #0b0e07);
+}
+.slide--lace {
+  background-image: linear-gradient(to bottom, #211c17 -5%, #080707 95%);
+}
+
+.slide--conclusions {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .slide {
