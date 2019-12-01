@@ -1062,11 +1062,15 @@ mask-size: 50% 50%;</code></pre>
             <div class="mask-wrapper mask-wrapper--svg">
               <svg width="200" height="200">
                 <use
-                  mask="url(#mask-shape)"
+                  mask="url(#mask-shape-alpha)"
                   xlink:href="#img-flower"></use>
               </svg>
             </div>
-            <code>mask-mode: <mark>luminance</mark> &rarr; <mark>alpha</mark></code>
+
+            <footer class="demo__item-footer">
+              <code><mark>mask-type="alpha"</mark></code>
+              <br/>на <code>&lt;mask&gt;</code>
+            </footer>
           </div>
 
           <div
@@ -1081,14 +1085,17 @@ mask-size: 50% 50%;</code></pre>
             <div class="mask-wrapper mask-wrapper--svg">
               <svg width="200" height="200">
                 <use
-                  mask="url(#mask-shape-alpha)"
+                  mask="url(#mask-shape)"
                   xlink:href="#img-flower"></use>
               </svg>
             </div>
+
             <footer class="demo__item-footer">
-              <code><mark>mask-type="alpha"</mark></code> на <code>&lt;mask&gt;</code>
+              <code>mask-mode: <mark>luminance</mark> &rarr; <mark>alpha</mark></code>
+              <br/>на элементе
             </footer>
           </div>
+
         </div>
       </section>
 

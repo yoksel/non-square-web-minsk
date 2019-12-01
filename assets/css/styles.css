@@ -30800,7 +30800,8 @@ pre[class*="language-"] {
   background: none; }
 
 .demo--mask-images .demo__item-footer {
-  white-space: nowrap; }
+  white-space: nowrap;
+  line-height: 1.65; }
 
 :root {
   --sg-grid-area: pic1;
