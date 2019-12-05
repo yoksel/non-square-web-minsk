@@ -78,7 +78,7 @@
   max-height: 100%;
   height: 480px; }
   .img-screen--tall {
-    height: 540px; }
+    height: 517px; }
 
 .cats {
   display: flex;
@@ -89,14 +89,6 @@
     display: block;
     margin-top: 2rem !important;
     max-width: 400px; }
-
-.magazine-example {
-  float: right;
-  max-width: 40%;
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
-  margin-right: -80px !important;
-  margin-top: -43% !important; }
 
 .slide {
   padding: 40px 50px;
