@@ -118,3 +118,9 @@
     shape-margin: 2rem;
   }
 }
+
+.text-wrapping--image-threshold-before {
+  IMG {
+    shape-image-threshold: 0;
+  }
+}

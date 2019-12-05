@@ -1385,7 +1385,11 @@
   </section>
 
   <section class="slide slide--section-title">
-    <h3>CSS как инструмент для&nbsp;рисования</h3>
+    <h3>Но зачем?</h3>
+  </section>
+
+  <section class="slide slide--section-title">
+    <h3>Стоит ли рисовать на&nbsp;CSS?</h3>
   </section>
 
   <section class="slide slide--conclusions">
@@ -1398,7 +1402,7 @@
           <li>Хрупкость</li>
         </ul>
       </div>
-      <div class="column">
+      <div class="column next">
         <h4>Плюсы</h4>
 
         <ul>
@@ -1408,11 +1412,12 @@
       </div>
     </div>
 
-    <div>
+    <div class="next">
       <h4>Выводы</h4>
 
       <ul>
-        <li>Быстро набросать иконку/фон/декоративный элемент &rarr; CSS</li>
+        <li>Градиенты, тени, простые линии &rarr; CSS</li>
+        <li>Быстро набросать иконку &rarr; CSS</li>
         <li>Эксперименты и развитие &rarr; CSS</li>
         <li>Сложные иконки и графика для сайта &rarr; SVG</li>
       </ul>
@@ -1664,13 +1669,13 @@
           </div>
 
           <div
-            class="demo__item">
+            class="demo__item next">
             <div class="clip-path clip-path--polygon"></div>
             <pre><code class="language-css">clip-path: polygon(68% 0%, 100% 34%, 96% 76%, 37% 100%, 0% 76%, 23% 20%)</code></pre>
           </div>
 
           <div
-            class="demo__item">
+            class="demo__item next">
             <div class="clip-path clip-path--polygon-animated"></div>
             <pre><code class="language-css">clip-path: polygon(52% 2%, 68% 34%, 83% 64%, 100% 100%, 55% 100%, 0% 100%, 16% 70%, 35% 35%)</code></pre>
           </div>
@@ -1735,16 +1740,15 @@
             <img src="./assets/img/cats/usu.jpg" alt="Cat shows userSpaceOnUse">
           </div>
 
-          <div class="cats__box">
+          <div class="cats__box next">
             <h4>objectBoundingBox</h4>
             <img src="./assets/img/cats/obb.jpg" alt="Cat shows objectBoundingBox">
           </div>
         </div>
-
       </section>
 
       <section class="slide slide--no-label">
-        <h4>d <span class="next">= M 150,300 C 150,300</span> <span class="next">&rarr; <mark>M 0.5,1 C 0.5,1 ...</mark></span></h4>
+        <h4>d <span class="next">= M 150,300 C 150,300 ...</span> <span class="next">&rarr; <mark>M 0.5,1 C 0.5,1 ...</mark></span></h4>
         <pre data-highlight-lines="3"><code class="language-svg">&lt;svg>
   &lt;clipPath id="path-heart" clipPathUnits="objectBoundingBox">
     &lt;path d="M 0.5,1 C 0.5,1,0,0.7,0,0.3 ..." />
@@ -1989,7 +1993,7 @@
         </figure>
       </section>
 
-      <section class="slide">
+      <section class="slide slide--no-label">
         <h4>Почитать</h4>
 
         <ul>
@@ -2013,6 +2017,10 @@
             <a href="https://codepen.io/yoksel/pen/QWWEqPP">Test page of clip-path properties</a>
           </li>
         </ul>
+
+        <img
+            class="cover cover--right"
+            src="./assets/img/clip-path-test-page.png">
       </section>
 
       <section class="slide slide--section-title">
@@ -2031,7 +2039,7 @@
 
           <img
             class="cover"
-            src="./assets/img/caniuse-clip-path-all.png">
+            src="./assets/img/caniuse/clip-path-all.png">
         </figure>
       </section>
 
@@ -2047,7 +2055,7 @@
 
           <img
             class="cover"
-            src="./assets/img/caniuse-clip-path-shape.png">
+            src="./assets/img/caniuse/clip-path-shape.png">
         </figure>
       </section>
 
@@ -2062,7 +2070,8 @@
               <li>Неполная поддержка браузерами</li>
             </ul>
           </div>
-          <div class="column">
+
+          <div class="column next">
             <h4>Плюсы</h4>
 
             <ul>
@@ -2098,7 +2107,7 @@
           </div>
 
           <div
-            class="demo__item">
+            class="demo__item next">
             <div class="mask mask--image"></div>
 
             <pre><code class="language-css">mask-image: url(tile.png);
@@ -2106,7 +2115,7 @@ mask-size: 50% 50%;</code></pre>
           </div>
 
           <div
-            class="demo__item">
+            class="demo__item next">
             <div class="mask mask--svg"></div>
 
             <pre><code class="language-css">mask-image: url(#mask);</code></pre>
@@ -2156,10 +2165,10 @@ mask-size: 50% 50%;</code></pre>
       </section>
 
       <section class="slide">
-        <h4>mask-mode, mask-type</h4>
+        <h4>mask-mode и mask-type</h4>
         <div class="demo demo--mask-images demo--cells">
           <div
-            class="demo__item">
+            class="demo__item next">
             <code>mask-image: url(#mask)</code>
 
             <div class="mask-wrapper mask-wrapper--svg">
@@ -2194,7 +2203,7 @@ mask-size: 50% 50%;</code></pre>
             </div>
 
             <footer class="demo__item-footer">
-              <code>mask-mode: <mark>luminance</mark> &rarr; <mark>alpha</mark></code>
+              <code>mask-mode: <mark>alpha</mark> &rarr; <mark>luminance</mark></code>
               <br/>на элементе
             </footer>
           </div>
@@ -2215,6 +2224,10 @@ mask-size: 50% 50%;</code></pre>
           <li>mask-mode</li>
           <li>mask-composite</li>
         </ul>
+      </section>
+
+      <section class="slide slide--section-title">
+        <h3>Практические примеры</h3>
       </section>
 
       <section class="slide slide--dark slide--no-label">
@@ -2628,7 +2641,7 @@ mask-size: 50% 50%;</code></pre>
         </figure>
       </section>
 
-      <section class="slide">
+      <section class="slide slide--no-label">
         <h4>Почитать</h4>
 
         <ul>
@@ -2652,6 +2665,10 @@ mask-size: 50% 50%;</code></pre>
             <a href="https://codepen.io/yoksel/pen/JjjRPyd">Test page of mask properties</a>
           </li>
         </ul>
+
+        <img
+            class="cover cover--right"
+            src="./assets/img/mask-test-page.png">
       </section>
 
       <section class="slide slide--section-title">
@@ -2670,7 +2687,7 @@ mask-size: 50% 50%;</code></pre>
 
           <img
             class="cover"
-            src="./assets/img/caniuse-mask.png">
+            src="./assets/img/caniuse/mask.png">
         </figure>
       </section>
 
@@ -2680,16 +2697,17 @@ mask-size: 50% 50%;</code></pre>
             <h4>Минусы</h4>
 
             <ul>
-              <li>Mask-mode, mask-type</li>
+              <li>Mask-mode и mask-type</li>
               <li>Нюансы SVG Mask</li>
               <li>Неполная поддержка браузерами</li>
             </ul>
           </div>
-          <div class="column">
+
+          <div class="column next">
             <h4>Плюсы</h4>
 
             <ul>
-              <li>Mask-mode, mask-type</li>
+              <li>Mask-mode и mask-type</li>
               <li>Есть полупрозрачность</li>
               <li>Гибкость управления</li>
             </ul>
@@ -3093,7 +3111,7 @@ mask-size: 50% 50%;</code></pre>
 
           <img
             class="cover"
-            src="./assets/img/caniuse-svg-mask.png">
+            src="./assets/img/caniuse/svg-mask.png">
         </figure>
       </section>
 
@@ -3106,7 +3124,7 @@ mask-size: 50% 50%;</code></pre>
               <li>Нюансы SVG Mask</li>
             </ul>
           </div>
-          <div class="column">
+          <div class="column next">
             <h4>Плюсы</h4>
 
             <ul>
@@ -3166,7 +3184,7 @@ mask-size: 50% 50%;</code></pre>
       </section>
 
       <section class="slide">
-        <pre><code class="language-css">.shape {
+        <pre data-highlight-lines="6"><code class="language-css">.shape {
   float: left;
   /* форма обрезки */
   clip-path: polygon(0% 0%, 80% 0%, 0% 100%);
@@ -3267,25 +3285,37 @@ mask-size: 50% 50%;</code></pre>
       </section>
 
       <section class="slide slide--no-label">
-        <pre><code class="language-css">border-radius: 50%;
+        <pre data-highlight-lines="3"><code class="language-css">border-radius: 50%;
+margin: 0 2rem 2rem 0;
 shape-outside: margin-box;</code></pre>
 
-        <div class="text-wrapping text-wrapping--margin-box">
+        <div class="text-wrapping text-wrapping--margin-box next">
           <img
           class="text-wrapping__img text-wrapping__img--1"
           src="./assets/img/demo/yoksel-zok-Z_rdomcVLwE-unsplash.jpg" alt="">
           Палинологическое изучение осадков онежской трансгрессии, имеющей отчетливое межморенное залегание, показало, что парадигма изоморфна времени. Кукуруза выводит знак. Момент фактически выстраивает экскурсионный подземный сток. Ташет, иcходя из того, что заставляет иначе взглянуть на то, что такое вектор угловой скорости.
-          Необходимым и достаточным условием отрицательности действительных частей корней рассматриваемого характеристического уравнения является то, что пpотопланетное облако относительно. Эзотерическое отражает комплексный кожух, но никакие ухищрения экспериментаторов не позволят наблюдать этот эффект в видимом диапазоне.
+          Необходимым и достаточным условием отрицательности действительных частей корней рассматриваемого характеристического уравнения является то, что пpотопланетное облако относительно. Эзотерическое отражает комплексный кожух.
         </div>
       </section>
 
       <section class="slide slide--no-label">
-        <pre><code class="language-css">shape-image-threshold: .5;</code></pre>
+        <pre><code class="language-css">shape-outside: url(circle-with-shadow.png);</code></pre>
+
+        <div class="text-wrapping  text-wrapping--image-threshold text-wrapping--image-threshold-before">
+          <img src="./assets/img/demo/circle-with-shadow.png">
+          Палинологическое изучение осадков онежской трансгрессии, имеющей отчетливое межморенное залегание, показало, что парадигма изоморфна времени. Согласно учению об изотопах, лирика вырождена. Кукуруза выводит знак. Момент фактически выстраивает экскурсионный подземный сток. Ташет, иcходя из того, что заставляет иначе взглянуть на то, что такое вектор угловой скорости.
+          Необходимым и достаточным условием отрицательности действительных частей корней рассматриваемого характеристического уравнения является то, что пpотопланетное облако относительно. Эзотерическое отражает комплексный кожух.
+        </div>
+      </section>
+
+      <section class="slide slide--no-label">
+        <pre data-highlight-lines="2"><code class="language-css">shape-outside: url(circle-with-shadow.png);
+shape-image-threshold: .5;</code></pre>
 
         <div class="text-wrapping  text-wrapping--image-threshold">
           <img src="./assets/img/demo/circle-with-shadow.png">
           Палинологическое изучение осадков онежской трансгрессии, имеющей отчетливое межморенное залегание, показало, что парадигма изоморфна времени. Согласно учению об изотопах, лирика вырождена. Кукуруза выводит знак. Момент фактически выстраивает экскурсионный подземный сток. Ташет, иcходя из того, что заставляет иначе взглянуть на то, что такое вектор угловой скорости.
-          Необходимым и достаточным условием отрицательности действительных частей корней рассматриваемого характеристического уравнения является то, что пpотопланетное облако относительно. Эзотерическое отражает комплексный кожух, но никакие ухищрения экспериментаторов не позволят наблюдать этот эффект в видимом диапазоне.
+          Необходимым и достаточным условием отрицательности действительных частей корней рассматриваемого характеристического уравнения является то, что пpотопланетное облако относительно. Эзотерическое отражает комплексный кожух.
         </div>
       </section>
 
@@ -3363,7 +3393,7 @@ shape-outside: margin-box;</code></pre>
 
           <img
             class="cover"
-            src="./assets/img/caniuse-shapes.png">
+            src="./assets/img/caniuse/shapes.png">
         </figure>
       </section>
 
@@ -3444,7 +3474,7 @@ shape-outside: margin-box;</code></pre>
 
           <img
             class="cover"
-            src="./assets/img/caniuse-exclusions.png">
+            src="./assets/img/caniuse/exclusions.png">
         </figure>
       </section>
 

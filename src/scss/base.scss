@@ -126,3 +126,12 @@
     max-width: 400px;
   }
 }
+
+.cover--right {
+  max-height: 500px;
+  left: auto;
+  right: 50px;
+  top: 0;
+  bottom:0;
+  transform: none;
+}
