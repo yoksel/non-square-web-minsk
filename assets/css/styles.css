@@ -31571,7 +31571,7 @@ pre[class*="language-"] {
     -webkit-clip-path: none;
             clip-path: none;
     shape-outside: margin-box;
-    margin: 0 2rem 2rem 0; }
+    margin: 0 2rem 0 0; }
 
 .text-wrapping--image-threshold {
   margin-top: 2rem;
