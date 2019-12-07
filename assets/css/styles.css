@@ -1255,7 +1255,7 @@ pre[class*="language-"] {
   top: -1.5em;
   width: 5em;
   height: 5em;
-  margin: 3em;
+  margin: 2em;
   background: gold;
   border-radius: 50%;
   box-shadow: 4em 0 0 0 gold; }
@@ -1321,7 +1321,7 @@ pre[class*="language-"] {
   left: 1em;
   width: 0;
   height: 0;
-  margin: 2em;
+  margin: 3em 2em;
   border: 2em solid orangered;
   background: none;
   border-right-color: transparent;
